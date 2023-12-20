@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <title>Trắc nghiệm SoICT</title>
+</head>
+
+<body>
+    <img src="img/SOICT.png" alt="SOICT logo">
+    <div id="quizContainer" class="container">
+        <h1 class="title">Trắc nghiệm SOICT</h1>
+        <div id="question" class="question"></div>
+        <div class="grid-container">
+            <label class="option" for="option1"><input class="hide" id="option1" type="radio" name="option"
+                    value="1"><span id="opt1"></span></label>
+            <label class="option" for="option2"><input class="hide" id="option2" type="radio" name="option"
+                    value="2"><span id="opt2"></span></label>
+            <label class="option" for="option3"><input class="hide" id="option3" type="radio" name="option"
+                    value="3"><span id="opt3"></span></label>
+            <label class="option" for="option4"><input class="hide" id="option4" type="radio" name="option"
+                    value="4"><span id="opt4"></span></label>
+        </div>
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+    </div>
+    <div id="result" class="container result" style="display: none;"></div>
+
+    <script type="text/javascript" src="question.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
